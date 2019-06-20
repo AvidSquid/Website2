@@ -3360,13 +3360,13 @@ input[type=range] + .thumb {
   width: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 9000px) {
   .container {
     width: 85%;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 9000px) {
   .container {
     width: 70%;
   }
@@ -8546,15 +8546,3 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
