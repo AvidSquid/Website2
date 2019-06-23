@@ -1,7 +1,11 @@
 #right1 {
 	text-align: right;
 }
-
+.background-image
+{
+	height: 100%;
+	width: 100%;
+}
 .img-fluid
 {
 	max-width: 100%;
