@@ -2,9 +2,12 @@
 	text-align: right;
 }
 
-.photograhpy {
-background-image: /*linear-gradient(rgba(0, 0, 0, 0.65),rgba(137, 255, 212, 0.65)),*/ url(Background.jpg);
+.img-fluid
+{
+	max-width: 100%;
+	height: auto; 
 }
+	
 .navbar-nav 
 {
 	margin-left: 0px;
