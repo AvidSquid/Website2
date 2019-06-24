@@ -1,7 +1,11 @@
 #right1 {
 	text-align: right;
 }
-
+.move
+{
+	position: relative;
+	right: 50px;
+}	
 .sunflower
 {
 	height: 300%;
