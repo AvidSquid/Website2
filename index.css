@@ -31,7 +31,11 @@
 	max-width: 100%;
 	height: auto; 
 }
-	
+
+.nav>li>a 
+{
+padding: 5px;	
+}	
 .navbar-nav 
 {
 	margin-left: 0px;
