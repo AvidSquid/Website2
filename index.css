@@ -1,5 +1,7 @@
 /* Style the Image Used to Trigger the Modal */
 #myImg {
+  height: 100%;
+  width: 100%;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
