@@ -25,6 +25,7 @@
 
 /* Modal Content (Image) */
 .modal-content {
+ padding: 0px;
   margin: auto;
   display: block;
   width: 80%;
