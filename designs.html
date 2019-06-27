@@ -89,7 +89,7 @@
 <img id="myImg" src="Sloth.jpg" alt="Snow">
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div class="myModal" class="modal">
 
   <!-- The Close Button -->
   <span class="close">&times;</span>
@@ -230,8 +230,8 @@
 var modal = document.getElementByClassName("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementByClassName("myImg");
-var modalImg = document.getElementByClassName("img01");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
 var captionText = document.getElementByClassName("caption");
 img.onclick = function(){
   modal.style.display = "block";
