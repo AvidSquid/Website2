@@ -1,5 +1,5 @@
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.myImg {
   height: 100%;
   width: 100%;
   border-radius: 5px;
