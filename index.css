@@ -138,7 +138,12 @@ a:hover {
   transition: 0.3s;
 }
 
-
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 .close2 {
   position: absolute;
   right: 35px;
