@@ -153,7 +153,8 @@ a:hover {
   transition: 0.3s;
 }
 
-.close2:hover {
+.close2:hover,
+.close2:focus{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
