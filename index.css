@@ -18,7 +18,12 @@ a:hover {
   font-weight: bold;
   transition: 0.3s;
 }
-
+.previous:hover,
+.previous:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 .next {
  position: absolute;
   right: 40px;
@@ -27,6 +32,12 @@ a:hover {
   font-size: 200px;
   font-weight: bold;
   transition: 0.3s;
+}
+.next:hover,
+.next:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .round {
