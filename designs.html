@@ -289,6 +289,10 @@ var span2 = document.getElementsByClassName("close3")[0];
     {
       modalImg2.src=imgArray[i]
       i--;
+      if (i==0)
+  {
+    backward2.style.display = "none";
+  }
     }
           forward2.onclick = function() {
      modalImg2.src=imgArray[i];
@@ -297,10 +301,6 @@ var span2 = document.getElementsByClassName("close3")[0];
  {
    forward2.style.display = "none";
 }
- else if (i==0)
-  {
-    backward2.style.display = "none";
-  }
        
 }
 span2.onclick = function() {
