@@ -245,8 +245,7 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function()
-{
+img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
@@ -254,8 +253,7 @@ img.onclick = function()
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close2")[0];
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() 
-{ 
+span.onclick = function() { 
   modal.style.display = "none";
 }
       </script>
@@ -271,15 +269,15 @@ var modalImg2 = document.getElementById("img02");
 var captionText2 = document.getElementById("caption");
 var forward2 = document.getElementsByClassName("next")[0];
 var backward2 = document.getElementsByClassName("previous")[0];               
-img2.onclick = function()
-{    
-  backward2.style.display = "none";
-   modal2.style.display = "block";
+img2.onclick = function(){
+  modal2.style.display = "block";
   modalImg2.src = this.src;
   captionText2.innerHTML = this.alt;
+    if (i==0)
+  {
+    backward2.style.display = "none";
   }
- 
-
+}
 // Get the <span> element that closes the modal
 var span2 = document.getElementsByClassName("close3")[0];
   
@@ -287,25 +285,26 @@ var span2 = document.getElementsByClassName("close3")[0];
    
     backward2.onclick = function()
     {
-      forward2.style.display = "";
       modalImg2.src=imgArray[i]
       i--;
     }
-          forward2.onclick = function() 
-          {
-        backward2.style.display = "block";    
+          forward2.onclick = function() {
      modalImg2.src=imgArray[i];
   i++;
   if (i==5)
  {
-   forward2.style.display = "block";
+   forward2.style.display = "none";
 }
+ else if (i==0)
+  {
+    backward2.style.display = "none";
+  }
        
 }
 span2.onclick = function() {
   i=0;
     modal2.style.display = "none";
-  button2.style.display = "block";
+  button2.style.display = "";
 }
       </script>
       
