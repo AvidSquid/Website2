@@ -286,10 +286,12 @@ var span2 = document.getElementsByClassName("close3")[0];
    
     backward2.onclick = function()
     {
+      forward2.onclick = "";
       modalImg2.src=imgArray[i]
       i--;
     }
           forward2.onclick = function() {
+        backwards2.style.display = "";    
      modalImg2.src=imgArray[i];
   i++;
   if (i==5)
