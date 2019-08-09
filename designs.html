@@ -264,6 +264,8 @@ span.onclick = function() {
       
         <script> 
 // Get the modal
+var i=0; 
+var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
 var modal2 = document.getElementById("myModal2");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img2 = document.getElementById("myImg2");
@@ -280,8 +282,7 @@ img2.onclick = function(){
 var span2 = document.getElementsByClassName("close3")[0];
   
 // When the user clicks on <span> (x), close the modal
-   var i=0; 
-   var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
+   
     backward2.onclick = function()
     {
       modalImg2.src=imgArray[i]
