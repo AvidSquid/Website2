@@ -249,10 +249,7 @@ img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-  if (i==0)
-  {
-    backward2.style.display = "none";
-  }
+
 }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close2")[0];
@@ -277,6 +274,10 @@ img2.onclick = function(){
   modal2.style.display = "block";
   modalImg2.src = this.src;
   captionText2.innerHTML = this.alt;
+    if (i==0)
+  {
+    backward2.style.display = "none";
+  }
 }
 // Get the <span> element that closes the modal
 var span2 = document.getElementsByClassName("close3")[0];
