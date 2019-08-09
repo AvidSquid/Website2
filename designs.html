@@ -272,17 +272,28 @@ img2.onclick = function(){
 }
 // Get the <span> element that closes the modal
 var span2 = document.getElementsByClassName("close3")[0];
-var button2= document.getElementsByClassName("next")[0];
+var forward2 = document.getElementsByClassName("next")[0];
+var backward2 = document.getElementsByClassName("previous")[0];       
 // When the user clicks on <span> (x), close the modal
    var i=0; 
    var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
-     button2.onclick = function() {
+    backward2.onclick = function()
+    {
+      modalImg2.src=imgArray[i]
+      i--;
+    }
+          forward2.onclick = function() {
      modalImg2.src=imgArray[i];
   i++;
   if (i==5)
  {
-   button2.style.display = "none";
+   forward2.style.display = "none";
 }
+  if (i==0)
+  {
+    back2.style.display = "none";
+  }
+       
 }
 span2.onclick = function() {
   i=0;
