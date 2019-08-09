@@ -274,11 +274,9 @@ img2.onclick = function(){
 var span2 = document.getElementsByClassName("close3")[0];
 // When the user clicks on <span> (x), close the modal
 span2.onclick = function() {
- var imgArray = [
-   { image: BarBack.jpg' },
-   { image: Sloth.jpg; }
-   ];
-  for (var i = 0; i <=5; i+=1) {
+ var i; 
+ var imgArray = ["BarBack.jpg", "Sloth.jpg" ];
+  for ( i = 0; i < imgArray.length; i++) {
       modalImg2.src="imgArray[i]"; 
 }
 }
