@@ -15,8 +15,12 @@ a:hover {
 }
 
 .next {
-  background-color: #4CAF50;
-  color: white;
+ position: absolute;
+  left: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .round {
