@@ -11,18 +11,20 @@ a:hover {
 
 .previous {
  position: absolute;
-  left: 35px;
+  left: 40px;
+  top: 300px;	
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 200px;
   font-weight: bold;
   transition: 0.3s;
 }
 
 .next {
  position: absolute;
-  left: 40px;
+  right: 40px;
+  top: 300px;	
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 200px;
   font-weight: bold;
   transition: 0.3s;
 }
