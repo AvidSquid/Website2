@@ -274,12 +274,12 @@ img2.onclick = function(){
 var span2 = document.getElementsByClassName("close3")[0];
 var button2= document.getElementsByClassName("next")[0];
 // When the user clicks on <span> (x), close the modal
-   var i=1; 
+   var i=0; 
    var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
      button2.onclick = function() {
      modalImg2.src=imgArray[i];
   i++;
-  if (i=5)
+  if (i==5)
  {
    button2.style.display = "none";
 }
