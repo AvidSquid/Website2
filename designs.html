@@ -272,17 +272,12 @@ var forward2 = document.getElementsByClassName("next")[0];
 var backward2 = document.getElementsByClassName("previous")[0];               
 img2.onclick = function()
 {
-   if (i==0)
-  {
-    backward2.style.display = "none";
+   
     modal2.style.display = "block";
   modalImg2.src = this.src;
   captionText2.innerHTML = this.alt;
   }
-  modal2.style.display = "block";
-  modalImg2.src = this.src;
-  captionText2.innerHTML = this.alt;
-  }
+
  
 // Get the <span> element that closes the modal
 var span2 = document.getElementsByClassName("close3")[0];
@@ -295,8 +290,9 @@ var span2 = document.getElementsByClassName("close3")[0];
       modalImg2.src=imgArray[i]
       i--;
     }
-          forward2.onclick = function() {
-        backward2.style.display = "block";    
+          
+    forward2.onclick = function() 
+          {   
      modalImg2.src=imgArray[i];
   i++;
   if (i==5)
