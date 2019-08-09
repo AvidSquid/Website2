@@ -273,7 +273,7 @@ var backward2 = document.getElementsByClassName("previous")[0];
 img2.onclick = function(){
    if (i==0)
   {
-    backwards2.style.display = "none";
+    backward2.style.display = "none";
     modal2.style.display = "block";
   modalImg2.src = this.src;
   captionText2.innerHTML = this.alt;
@@ -293,12 +293,12 @@ var span2 = document.getElementsByClassName("close3")[0];
    
     backward2.onclick = function()
     {
-      forwards2.onclick = " ";
+      forward2.onclick = " ";
       modalImg2.src=imgArray[i]
       i--;
     }
-          forwards2.onclick = function() {
-        backwards2.style.display = " ";    
+          forward2.onclick = function() {
+        backward2.style.display = " ";    
      modalImg2.src=imgArray[i];
   i++;
   if (i==5)
