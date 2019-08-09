@@ -10,13 +10,17 @@ a:hover {
 }
 
 .previous {
-  background-color: #f1f1f1;
-  color: black;
+ position: absolute;
+  left: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .next {
  position: absolute;
-  left: 35px;
+  left: 40px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
