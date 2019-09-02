@@ -436,6 +436,67 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+.close5 {
+  position: absolute;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close5:hover,
+.close5:focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close6 {
+  position: absolute;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close6:hover,
+.close6:focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close7 {
+  position: absolute;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close7:hover,
+.close7:focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close8 {
+  position: absolute;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close8:hover,
+.close8:focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}`
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
