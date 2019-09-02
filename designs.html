@@ -294,7 +294,7 @@ span.onclick = function() {
         <script> 
 // Get the modal
 var i=1; 
-var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
+var imgArray2 = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
 var modal2 = document.getElementById("myModal2");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img2 = document.getElementById("myImg2");
@@ -306,7 +306,7 @@ img2.onclick = function(){
     forward2.style.display = "block";
     backward2.style.display = "block";
   modal2.style.display = "block";
-  modalImg2.src = imgArray[i];
+  modalImg2.src = imgArray2[i];
   captionText2.innerHTML = this.alt;
     if (i==0) {
     backward2.style.display = "none"; }
@@ -319,14 +319,14 @@ var span2 = document.getElementsByClassName("close3")[0];
     backward2.onclick = function(){
        i--;
      forward2.style.display = "block"; 
-      modalImg2.src=imgArray[i]
+      modalImg2.src=imgArray2[i]
       if (i==0){
     backward2.style.display = "none";  }
     }
           forward2.onclick = function() {
             i++;
             backward2.style.display = "block";
-     modalImg2.src=imgArray[i];
+     modalImg2.src=imgArray2[i];
   if (i==5) {
    forward2.style.display = "none";}
        }
