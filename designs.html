@@ -450,15 +450,18 @@ var captionText6 = document.getElementById("caption");
 var forward6 = document.getElementsByClassName("next5")[0];
 var backward6 = document.getElementsByClassName("previous5")[0];               
 img6.onclick = function(){
+   if (five==5) {
+    forward6.style.display = "none"; }
+   else 
+   {
     forward6.style.display = "block";
+   } 
     backward6.style.display = "block";
   modal6.style.display = "block";
   modalImg6.src = imgArray5[five];
   captionText6.innerHTML = this.alt;
-  
-    if (five==5) {
-    forward6.style.display = "none"; }
 }
+   
 // Get the <span> element that closes the modal
 var span6= document.getElementsByClassName("close7")[0];
   
