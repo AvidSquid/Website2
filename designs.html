@@ -250,14 +250,18 @@ var captionText = document.getElementById("caption");
 var forward = document.getElementsByClassName("next0")[0];
 var backward = document.getElementsByClassName("previous0")[0];               
 img.onclick = function(){
-    forward.style.display = "block";
+      if (zero==0) {
+    backward.style.display = "none"; }
+}
+     else
+     {
     backward.style.display = "block";
+     }
+      forward.style.display = "block"; 
   modal.style.display = "block";
   modalImg.src = imgArray[zero];
   captionText.innerHTML = this.alt;
-    if (zero==0) {
-    backward.style.display = "none"; }
-}
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close2")[0];
   
