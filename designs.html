@@ -262,7 +262,7 @@ span.onclick = function() {
       
         <script> 
 // Get the modal
- var i=1;           
+ var one=1;           
 var modal2 = document.getElementById("myModal2");
 var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];             
 // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -275,9 +275,9 @@ img2.onclick = function(){
     forward2.style.display = "block";
     backward2.style.display = "block";
   modal2.style.display = "block";
-  modalImg2.src = imgArray[i];
+  modalImg2.src = imgArray[one];
   captionText2.innerHTML = this.alt;
-    if (i==0) {
+    if (one==0) {
     backward2.style.display = "none"; }
 }
 // Get the <span> element that closes the modal
@@ -286,21 +286,21 @@ var span2 = document.getElementsByClassName("close3")[0];
 // When the user clicks on <span> (x), close the modal
    
     backward2.onclick = function(){
-       i--;
+       one--;
      forward2.style.display = "block"; 
-      modalImg2.src=imgArray[i]
-      if (i==0){
+      modalImg2.src=imgArray[one]
+      if (one==0){
     backward2.style.display = "none";  }
     }
           forward2.onclick = function() {
-            i++;
+            one++;
             backward2.style.display = "block";
-     modalImg2.src=imgArray[i];
-  if (i==5) {
+     modalImg2.src=imgArray[one];
+  if (one==5) {
    forward2.style.display = "none";}
        }
 span2.onclick = function() {
-  i=1;
+  one=1;
     modal2.style.display = "none";
   button2.style.display = "";
 }
