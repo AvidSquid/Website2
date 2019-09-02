@@ -45,7 +45,42 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
+.previous2 {
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */	
+ position: absolute;
+  left: 40px;
+  top: 200px;	
+  color: #f1f1f1;
+  font-size: 200px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.previous2:hover,
+.previous:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.next2 {
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */	
+ position: absolute;
+  right: 40px;
+  top: 200px;	
+  color: #f1f1f1;
+  font-size: 200px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.next2:hover,
+.next2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 .round {
   border-radius: 50%;
 }
