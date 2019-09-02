@@ -240,49 +240,28 @@
 
      <script> 
 // Get the modal
-var i=0; 
-var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];   
-var modal2 = document.getElementById("myModal2");
+var i=0;       
+var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];      
+var modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img2 = document.getElementById("myImg2");
-var modalImg2 = document.getElementById("img02");
-var captionText2 = document.getElementById("caption");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
 var forward2 = document.getElementsByClassName("next")[0];
-var backward2 = document.getElementsByClassName("previous")[0];               
-img2.onclick = function(){
-    forward2.style.display = "block";
-    backward2.style.display = "block";
-  modal2.style.display = "block";
-  modalImg2.src = imgArray[i];
-  captionText2.innerHTML = this.alt;
-    if (i==0) {
-    backward2.style.display = "none"; }
+var backward2 = document.getElementsByClassName("previous")[0];     
+img.onclick = function(){
+   forward2.style.display = "block";
+   backward2.style.display = "block";
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
 // Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close3")[0];
-  
+var span = document.getElementsByClassName("close2")[0];
 // When the user clicks on <span> (x), close the modal
-   
-    backward2.onclick = function(){
-       i--;
-     forward2.style.display = "block"; 
-      modalImg2.src=imgArray[i]
-      if (i==0){
-    backward2.style.display = "none";  }
-    }
-          forward2.onclick = function() {
-            i++;
-            backward2.style.display = "block";
-     modalImg2.src=imgArray[i];
-  if (i==5) {
-   forward2.style.display = "none";}
-       }
-span2.onclick = function() {
-  i=1;
-    modal2.style.display = "none";
-  button2.style.display = "";
+span.onclick = function() { 
+  modal.style.display = "none";
 }
-      </script>
       </script>
       
         <script> 
