@@ -260,52 +260,6 @@ span.onclick = function() {
 }
       </script>
       
-        <script> 
-// Get the modal
- var two=2;           
-var modal3 = document.getElementById("myModal3");
-var imgArray2 = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];             
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img3 = document.getElementById("myImg3");
-var modalImg3 = document.getElementById("img03");
-var captionText3 = document.getElementById("caption");
-var forward3 = document.getElementsByClassName("next2")[0];
-var backward3 = document.getElementsByClassName("previous2")[0];               
-img3.onclick = function(){
-    forward3.style.display = "block";
-    backward2.style.display = "block";
-  modal3.style.display = "block";
-  modalImg3.src = imgArray[two];
-  captionText3.innerHTML = this.alt;
-    if (two==0) {
-    backward3.style.display = "none"; }
-}
-// Get the <span> element that closes the modal
-var span3 = document.getElementsByClassName("close4")[0];
-  
-// When the user clicks on <span> (x), close the modal
-   
-    backward3.onclick = function(){
-       two--;
-     forward3.style.display = "block"; 
-      modalImg3.src=imgArray2[two]
-      if (two==0){
-    backward3.style.display = "none";  }
-    }
-          forward3.onclick = function() {
-            two++;
-            backward3.style.display = "block";
-     modalImg3.src=imgArray2[two];
-  if (two==5) {
-   forward3.style.display = "none";}
-       }
-span3.onclick = function() {
-  two=1;
-    modal3.style.display = "none";
-  button3.style.display = "";
-}
-      </script>
-      
            <script> 
 // Get the modal
  var one=1;           
@@ -351,7 +305,96 @@ span2.onclick = function() {
   button2.style.display = "";
 }
       </script>
-      
+  <script> 
+// Get the modal
+ var two=2;           
+var modal3 = document.getElementById("myModal3");
+var imgArray2 = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];             
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img3 = document.getElementById("myImg3");
+var modalImg3 = document.getElementById("img03");
+var captionText3 = document.getElementById("caption");
+var forward3 = document.getElementsByClassName("next2")[0];
+var backward3 = document.getElementsByClassName("previous2")[0];               
+img3.onclick = function(){
+    forward3.style.display = "block";
+    backward3.style.display = "block";
+  modal3.style.display = "block";
+  modalImg3.src = imgArray2[two];
+  captionText3.innerHTML = this.alt;
+    if (two==0) {
+    backward3.style.display = "none"; }
+}
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close4")[0];
+  
+// When the user clicks on <span> (x), close the modal
+   
+    backward3.onclick = function(){
+       two--;
+     forward3.style.display = "block"; 
+      modalImg3.src=imgArray2[two]
+      if (two==0){
+    backward3.style.display = "none";  }
+    }
+          forward3.onclick = function() {
+            two++;
+            backward3.style.display = "block";
+     modalImg3.src=imgArray2[two];
+  if (two==5) {
+   forward3.style.display = "none";}
+       }
+span3.onclick = function() {
+  two=1;
+    modal3.style.display = "none";
+  button3.style.display = "";
+}
+      </script>   
+        <script> 
+// Get the modal
+ var three=3;           
+var modal4 = document.getElementById("myModal4");
+var imgArray3 = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];             
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img4 = document.getElementById("myImg4");
+var modalImg4 = document.getElementById("img04");
+var captionText4 = document.getElementById("caption");
+var forward4 = document.getElementsByClassName("next3")[0];
+var backward4 = document.getElementsByClassName("previous3")[0];               
+img4.onclick = function(){
+    forward4.style.display = "block";
+    backward4.style.display = "block";
+  modal4.style.display = "block";
+  modalImg4.src = imgArray3[three];
+  captionText4.innerHTML = this.alt;
+    if (three==0) {
+    backward4.style.display = "none"; }
+}
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("close5")[0];
+  
+// When the user clicks on <span> (x), close the modal
+   
+    backward4.onclick = function(){
+       three--;
+     forward4.style.display = "block"; 
+      modalImg4.src=imgArray3[three]
+      if (three==0){
+    backward4.style.display = "none";  }
+    }
+          forward4.onclick = function() {
+            three++;
+            backward4.style.display = "block";
+     modalImg4.src=imgArray3[three];
+  if (three==5) {
+   forward4.style.display = "none";}
+       }
+span4.onclick = function() {
+  three=1;
+    modal4.style.display = "none";
+  button4.style.display = "";
+}
+      </script>   
   <script>
       //To generate the parallax effect
        $(document).ready(function(){
