@@ -237,26 +237,52 @@
     <!-- <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
-
-     <script> 
+    <script> 
 // Get the modal
+ var zero=0;           
 var modal = document.getElementById("myModal");
+var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];             
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
+var forward = document.getElementsByClassName("next")[0];
+var backward = document.getElementsByClassName("previous")[0];               
+img2.onclick = function(){
+    forward.style.display = "block";
+    backward.style.display = "block";
   modal.style.display = "block";
-  modalImg.src = this.src;
+  modalImg.src = imgArray[zero];
   captionText.innerHTML = this.alt;
+    if (zero==0) {
+    backward2.style.display = "none"; }
 }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close2")[0];
+  
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+   
+    backward.onclick = function(){
+       zero--;
+     forward.style.display = "block"; 
+      modalImg.src=imgArray[zero]
+      if (zero==0){
+    backward.style.display = "none";  }
+    }
+          forward.onclick = function() {
+            zero++;
+            backward.style.display = "block";
+     modalImg.src=imgArray[zero];
+  if (zero==5) {
+   forward.style.display = "none";}
+       }
+span.onclick = function() {
+  zero=0;
+    modal.style.display = "none";
+  button.style.display = "";
 }
       </script>
+
       
            <script> 
 // Get the modal
