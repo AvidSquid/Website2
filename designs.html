@@ -85,10 +85,10 @@
             
          
          
-       <div class="col-md-4 paddingTop3"> 
+<div class="col-md-4 paddingTop3"> 
          <div class="card medium">
-         <!-- Trigger the Modal -->
-<img id="myImg" src="BarBack.jpg" alt="Snow">
+           <!-- Trigger the Modal -->
+<img id="myImg" src="Sloth.jpg" alt="Snow">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -96,10 +96,11 @@
   <!-- The Close Button -->
   <span class="close2">&times;
   </span>
-
   <!-- Modal Content (The Image) -->
-    <a name="myModal"></a>
   <img class="modal-content" id="img01">
+  <span class="previous0">&#8249;</span>
+<span class="next0">&#8250;</span>
+  <!-- Modal Caption (Image Text) -->
 </div>
          </div>
          </div>
@@ -246,9 +247,9 @@ var imgArray = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-var forward = document.getElementsByClassName("next")[0];
-var backward = document.getElementsByClassName("previous")[0];               
-img2.onclick = function(){
+var forward = document.getElementsByClassName("next0")[0];
+var backward = document.getElementsByClassName("previous0")[0];               
+img.onclick = function(){
     forward.style.display = "block";
     backward.style.display = "block";
   modal.style.display = "block";
