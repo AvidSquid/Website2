@@ -58,7 +58,7 @@ a:hover {
   transition: 0.3s;
 }
 .previous2:hover,
-.previous:focus {
+.previous2:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
