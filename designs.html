@@ -253,8 +253,35 @@ img.onclick = function(){
    forward.style.display = "block";
    backward.style.display = "block";
   modal.style.display = "block";
-  modalImg.src = this.src;
+  modalImg.src = imgArray[i];
   captionText.innerHTML = this.alt;
+  if (i==0) {
+    backward2.style.display = "none"; }
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+  
+// When the user clicks on <span> (x), close the modal
+   
+    backward.onclick = function(){
+       i--;
+     forward.style.display = "block"; 
+      modalImg.src=imgArray[i]
+      if (i==0){
+    backward.style.display = "none";  }
+    }
+          forward.onclick = function() {
+            i++;
+            backward.style.display = "block";
+     modalImg.src=imgArray[i];
+  if (i==5) {
+   forward.style.display = "none";}
+       }
+span.onclick = function() {
+  i=1;
+    modal.style.display = "none";
+  button.style.display = "";
+}
 }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close2")[0];
