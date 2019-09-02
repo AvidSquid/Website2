@@ -393,6 +393,51 @@ span4.onclick = function() {
   button4.style.display = "";
 }
       </script>   
+       <script> 
+// Get the modal
+ var four=4;           
+var modal5 = document.getElementById("myModal5");
+var imgArray4 = ["BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg", "BarBack.jpg", "Sloth.jpg" ];             
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img5 = document.getElementById("myImg5");
+var modalImg5 = document.getElementById("img05");
+var captionText5 = document.getElementById("caption");
+var forward5 = document.getElementsByClassName("next4")[0];
+var backward5 = document.getElementsByClassName("previous4")[0];               
+img5.onclick = function(){
+    forward5.style.display = "block";
+    backward5.style.display = "block";
+  modal5.style.display = "block";
+  modalImg5.src = imgArray4[four];
+  captionText5.innerHTML = this.alt;
+    if (four==0) {
+    backward5.style.display = "none"; }
+}
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close6")[0];
+  
+// When the user clicks on <span> (x), close the modal
+   
+    backward5.onclick = function(){
+       four--;
+     forward5.style.display = "block"; 
+      modalImg5.src=imgArray4[four]
+      if (four==0){
+    backward5.style.display = "none";  }
+    }
+          forward5.onclick = function() {
+            four++;
+            backward5.style.display = "block";
+     modalImg5.src=imgArray4[four];
+  if (four==5) {
+   forward5.style.display = "none";}
+       }
+span5.onclick = function() {
+  four=1;
+    modal5.style.display = "none";
+  button5.style.display = "";
+}
+      </script>   
   <script>
       //To generate the parallax effect
        $(document).ready(function(){
